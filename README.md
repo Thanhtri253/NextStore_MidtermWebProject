@@ -6,6 +6,10 @@
 
 ---
 
+Link Github: https://github.com/Thanhtri253/NextStore_MidtermWebProject
+
+Link video demo: 
+
 ##  Pages
 
 | Page | Route | Rendering |
