@@ -8,7 +8,7 @@
 
 Link Github: https://github.com/Thanhtri253/NextStore_MidtermWebProject
 
-Link video demo: 
+Link video demo: https://drive.google.com/file/d/1YcjNebXTwNDZohVy32pXjKH16k6YzrrE/view?usp=sharing
 
 ##  Pages
 
