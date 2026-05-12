@@ -1,0 +1,66 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-card: #16161e;
+  --border: #1e1e2e;
+  --text-primary: #e8e6f0;
+  --text-muted: #6b6b80;
+  --brand: #7c6af7;
+  --brand-light: #a78bfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .card {
+    @apply bg-[#111118] border border-[#1e1e2e] rounded-xl;
+  }
+
+  .btn-primary {
+    @apply bg-violet-600 hover:bg-violet-500 text-white font-medium
+           px-4 py-2 rounded-lg transition-colors duration-150 text-sm;
+  }
+
+  .btn-secondary {
+    @apply border border-[#2a2a3e] bg-transparent hover:bg-[#1e1e2e]
+           text-[#e8e6f0] font-medium px-4 py-2 rounded-lg
+           transition-colors duration-150 text-sm;
+  }
+
+  .badge {
+    @apply text-xs font-mono font-medium px-2 py-0.5 rounded;
+  }
+
+  .badge-ssg {
+    @apply bg-[#1a2a1a] text-green-400 border border-[#2a4a2a];
+  }
+
+  .badge-ssr {
+    @apply bg-[#1a1a3a] text-indigo-400 border border-[#2a2a5a];
+  }
+
+  .badge-csr {
+    @apply bg-[#2a1a1a] text-orange-400 border border-[#4a2a1a];
+  }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.2s ease-out; }
